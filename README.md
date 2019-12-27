@@ -1,27 +1,12 @@
-# MonProjetAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Angular Openclassroom Exmaple
+This project was done while learning Angular fundamentals ( version 5) on OpenClassroom.
+The goal is to learn how to :
+- Create the structure of an Angular project
+- Display data ( String , property, event, two-way binding ...)
+- Use a Directive ( ngIf, ngFor, ngStyle, ngClass ...)
+- Use Pipes 
+- Create a service ( communication between components )
+- Use routing (Router, Redirection, Guards ...)
+- Use an Observable 
+- Deal with Forms ( Template, Reactive, ...)
+- Interact with httpClient server using Firebase
