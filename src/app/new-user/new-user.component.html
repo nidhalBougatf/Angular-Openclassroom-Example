@@ -1,0 +1,32 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <form  (ngSubmit)="onSubmitForm()" [formGroup]="userForm">
+    <div class="form-group">
+      <label for="firstName">First Name</label> <!-- for attribute is just to specify that this label is linked to the element having id ='firstname'-->
+      <input type="text" id="firstName" class="form-control" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" class="form-control" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail adress</label>
+      <input type="text" id="email" class="form-control" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="drinkPreference">Which kind of soda you prefer ?</label>
+      <select id="drinkPreference" class="form-control" formControlName="drinkPreference">
+        <option value="Coca">Coca</option>
+        <option value="Pepsi">Pepsi</option>
+      </select>
+    </div>
+    <div formArrayName="hobbies">
+      <h3>Your hobbies</h3>
+      <div class="form-group" *ngFor="let hobbyControl of getHobbies().controls; let i = index">
+        <input type="text" class="form-control" [formControlName]="i">
+      </div>
+      <button type="button" class="btn btn-success" (click)="onAddHobby()">Add hobby</button>
+	</div>		<!-- type="button" to avoid submittin the form (=>refreshing the component) and to create a new formcontrol (=> new input) giving the possibility to add  a new hobby -->
+    <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">Submit</button>
+    							<!-- disabled th button to verify the inputs before submitting -->
+  </form>
+</div>
