@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppareilComponent } from './appareil/appareil.component';
+import { DeviceComponent } from './device/device.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { AuthComponent } from './auth/auth.component';
-import { AppareilViewComponent } from './appareil-view/appareil-view.component'
-import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
+import { DeviceViewComponent } from './device-view/device-view.component'
+import { SingleDeviceComponent } from './single-device/single-device.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
-import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
+import { EditDeviceComponent } from './edit-device/edit-device.component';
 
 import { UserService } from './services/user.service';
-import { AppareilService } from './services/appareil.service';
+import { DeviceService } from './services/device.service';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard.service';
 
@@ -21,13 +21,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
-  { path: 'appareils', canActivate: [AuthGuard], component: AppareilViewComponent },
-  { path: 'appareils/:id', canActivate: [AuthGuard], component: SingleAppareilComponent },
-  { path: 'edit', canActivate: [AuthGuard], component: EditAppareilComponent },
+  { path: 'devices', canActivate: [AuthGuard], component: DeviceViewComponent },
+  { path: 'devices/:id', canActivate: [AuthGuard], component: SingleDeviceComponent },
+  { path: 'edit', canActivate: [AuthGuard], component: EditDeviceComponent },
   { path: 'auth', component: AuthComponent },
   { path: 'users', component: UserListComponent },
   { path: 'new-user', component: NewUserComponent },
-  { path: '', component: AppareilViewComponent },
+  { path: '', component: DeviceViewComponent },
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' }
 ];
@@ -36,12 +36,12 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AppareilComponent,
+    DeviceComponent,
     AuthComponent,
-    AppareilViewComponent,
-    SingleAppareilComponent,
+    DeviceViewComponent,
+    SingleDeviceComponent,
     FourOhFourComponent,
-    EditAppareilComponent,
+    EditDeviceComponent,
     UserListComponent,
     NewUserComponent
   ],
@@ -53,7 +53,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-  AppareilService,
+  DeviceService,
   AuthService,
   AuthGuard,
   UserService
