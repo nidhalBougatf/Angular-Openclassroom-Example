@@ -6,8 +6,8 @@ The goal is to learn how to :
 - Use a Directive ( ngIf, ngFor, ngStyle, ngClass ...)
 - Use Pipes 
 - Use a service and dependency injection ( communication between components )
-- Use route (Router, Redirection, Guards ...)
-- Authentification and route protection
+- Use routes and route protection(Router, Redirection, Guards ...)
+- Authentification (authentification is static here, you can find Library repository which contains a real authentification with firebase service)
 - Use an Observable 
 - Create with Forms ( Template, Reactive, ...)
 - Interact with httpClient server using Firebase
