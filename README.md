@@ -16,12 +16,12 @@ The goal is to learn how to :
 # Project description
 We are dealing with two simple models :
 - Device features :
-      add new device ( using Reactive From )
-      list all the devices
-      Save/Get the list of the devices to/from the sever
+      - add new device ( using Reactive From )
+      - list all the devices
+      - Save/Get the list of the devices to/from the sever
 - User
-      add new user ( Template )
-      list all users ( static list of users)
+      - add new user ( Template )
+      - list all users ( static list of users)
       
- Also, there some other features tested in each model.
+ Also, there is some other features tested in each model.
    
