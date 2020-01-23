@@ -14,8 +14,8 @@ The goal is to learn how to :
 
 
 # Project description
-We are dealing with two simple models :
-- Device features :
+We are creating two simple models and implementing their features :
+- Device
 	- add new device ( using Reactive From )
 	- list all the devices
 	- Save/Get the list of the devices to/from the sever
